@@ -1,0 +1,11 @@
+<custom-interceptors>
+<custom-interceptor>
+<interceptor-class-name>com.singularity.tm.jms.SpringAmqpConsumerInterceptor</interceptor-class-name>
+<match-class type="matches-class">
+<name filter-type="equals">com.siemens.isb.mta.rabbit.MtaChannelAwareMessageListener</name>
+</match-class>
+<match-method>
+<name>onMessage</name>
+</match-method>
+</custom-interceptor>
+</custom-interceptors>
